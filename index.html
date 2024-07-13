@@ -18,6 +18,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
 
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
         * {
             margin: 0;
             padding: 0;
@@ -152,6 +153,10 @@
                 font-size: 11px
             }
         }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
     </style>
     <script>
         tailwind.config = {
@@ -180,9 +185,169 @@
             </div>
             <div class="">
                 <ul class="flex gap-[4vw] mt-[0.9vw]">
-                    <li class="text-[20px] font-['Archivo',_sans-serif] text-white">Local SEO Software</li>
-                    <li class="text-[20px] font-['Archivo',_sans-serif] text-white">Listings & SEO Services</li>
-                    <li class="text-[20px] font-['Archivo',_sans-serif] text-white">Resources</li>
+
+                    <div class="dropdown relative inline-block;">
+                        <li class="text-[20px] font-['Archivo',_sans-serif] text-white hover:text-gray-400">Local SEO
+                            Software <i class="fas fa-chevron-down text-gray-400 text-[0.8vw] ml-[0.2vw]"></i> </li>
+                        <div
+                            class="dropdown-content hidden absolute bg-[#f9f9f9] w-[30vw] z-[1] px-4 py-3 rounded-[1vh] mt-[1vw]">
+                            <section class="p-[2vw] border-b-[2px]">
+                                <div class="flex gap-[1vw] hover:bg-[#ececec] rounded-[1vh] p-[0.3vw]">
+                                    <p><img src="img/GBP-Management.svg" alt="" height="40px" width="40px"></p>
+                                    <div class="">
+                                        <p class="font-['Archivo',_sans-serif]font-[600] text-[1vw]">Local Platform</p>
+                                        <p class="text-gray-400 font-[400]">Take complete control of your Google
+                                            Business Profile</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex gap-[1vw] mt-[1vw] hover:bg-[#ececec] rounded-[1vh] p-[0.3vw]">
+                                    <p><img src="img/Local-Citation-Finder.svg" alt="" height="40px" width="40px"></p>
+                                    <div class="">
+                                        <p class="font-['Archivo',_sans-serif]font-[600] text-[1vw]">Local Rank Tracker
+                                        </p>
+                                        <p class="text-gray-400 font-[400]">Monitor your local and organic search
+                                            performance</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex gap-[1vw] mt-[1vw] hover:bg-[#ececec] rounded-[1vh] p-[0.3vw]">
+                                    <p><img src="img/Local-Rank-Tracker_01.svg" alt="" height="40px" width="40px"></p>
+                                    <div class="">
+                                        <p class="font-['Archivo',_sans-serif]font-[600] text-[1vw]">Local Citation
+                                            Finder</p>
+                                        <p class="text-gray-400 font-[400]">Find new citation opportunities to grow your
+                                            rankings</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex gap-[1vw] mt-[1vw] hover:bg-[#ececec] rounded-[1vh] p-[0.3vw]">
+                                    <p><img src="img/Reputation-Builder_02.svg" alt="" height="40px" width="40px"></p>
+                                    <div class="">
+                                        <p class="font-['Archivo',_sans-serif]font-[600] text-[1vw]">Reputation Builder
+                                        </p>
+                                        <p class="text-gray-400 font-[400]">Get more online reviews and build your
+                                            reputation</p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="p-[2vw]">
+                                <p
+                                    class="text-gray-400 font-[600] text-[1.2vw] hover:bg-[#ececec] rounded-[1vh] p-[0.3vw]">
+                                    FREE TOOLS</p>
+                                <div class="hover:bg-[#ececec] rounded-[1vh] p-[0.3vw]">
+                                    <p class="font-['Archivo',_sans-serif]font-[600] text-[1vw] mt-[1vw] ">Review
+                                        Checker</p>
+                                    <p class="text-gray-400 font-[400]">Your business’s online reviews and ratings at a
+                                        glance</p>
+                                </div>
+                                <div class="hover:bg-[#ececec] rounded-[1vh] p-[0.3vw]">
+                                    <p class="font-['Archivo',_sans-serif]font-[600] text-[1vw] mt-[1vw]">Google Review
+                                        Link Generator</p>
+                                    <p class="text-gray-400 font-[400]">Get more Google reviews with a spiffy custom
+                                        review link</p>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="dropdown relative inline-block;">
+                        <li class="text-[20px] font-['Archivo',_sans-serif] text-white hover:text-gray-400">Listings &
+                            SEO Services <i class="fas fa-chevron-down text-gray-400 text-[0.8vw] ml-[0.2vw]"></i></li>
+                        <div
+                            class="dropdown-content hidden absolute bg-[#fff] w-[35vw] z-[1] px-4 py-3 rounded-[1vh] mt-[1vw]">
+                            <section class="p-[2vw]">
+                                <div class="flex gap-[1vw] hover:bg-[#ececec] rounded-[1vh] p-[0.3vw]">
+                                    <p><img src="img/SEO-Services_Flat_01.svg" alt="" height="40px" width="40px"></p>
+                                    <div class="">
+                                        <p class="font-['Archivo',_sans-serif]font-[600] text-[1vw]">SEO Services</p>
+                                        <p class="text-gray-400 font-[400]">Increase your rankings and conversions with
+                                            help from </br> our team of local SEO experts</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex gap-[1vw] mt-[1vw]">
+                                    <p><img src="img/Listings-Service_01.svg" alt="" height="40px" width="40px"></p>
+                                    <div class="">
+                                        <p class="font-['Archivo',_sans-serif]font-[600] text-[1vw]">Listings Service
+                                        </p>
+                                        <p class="text-gray-400 font-[400]">Take the pain out of managing your
+                                            business’s listings </br> and let us find, fix, improve, and build new
+                                            listings to </br> maximize their impact on your rankings.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex gap-[1vw] mt-[1vw]">
+                                    <p><img src="img/Yext-Replacement-Service_01.svg" alt="" height="40px" width="40px">
+                                    </p>
+                                    <div class="">
+                                        <p class="font-['Archivo',_sans-serif]font-[600] text-[1vw]">Yext Replacement
+                                            Service</p>
+                                        <p class="text-gray-400 font-[400]">Ditch Yext with our superior and more
+                                            affordable </br> alternative</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex gap-[1vw] mt-[1vw]">
+                                    <p><img src="img/Enterprise-Services_flat.svg" alt="" height="40px" width="40px">
+                                    </p>
+                                    <div class="">
+                                        <p class="font-['Archivo',_sans-serif]font-[600] text-[1vw]">Enterprise Services
+                                        </p>
+                                        <p class="text-gray-400 font-[400]">Leverage our extensive experience working
+                                            with multi- </br> location and enterprise businesses to solve your local
+                                            </br> search problems</p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="dropdown relative inline-block;">
+                        <li class="text-[20px] font-['Archivo',_sans-serif] text-white hover:text-gray-400">Resources <i
+                                class="fas fa-chevron-down text-gray-400 text-[0.8vw] ml-[0.2vw]"></i></li>
+                        <div class=" dropdown-content hidden absolute bg-[#fff] w-[40vw] z-[1] px-4 py-3 rounded-[1vh] mt-[1vw] ml-[-5vw]">
+                            <div class="flex">
+                                <section class="p-[2vw] border-r-[2px]">
+                                    <div class="hover:bg-[#ececec] rounded-[1vh] p-[0.3vw] mt-[1vw]">
+                                        <p class="font-['Archivo',_sans-serif]font-[600] text-[1vw] ">Help center</p>
+                                        <p class="text-gray-400 font-[400]">We're here to help!</p>
+                                    </div>
+                                    <div class="hover:bg-[#ececec] rounded-[1vh] p-[0.3vw] mt-[1vw]">
+                                        <p class="font-['Archivo',_sans-serif]font-[600] text-[1vw] ">Local Insider
+                                            newsletter
+                                        </p>
+                                        <p class="text-gray-400 font-[400]">Stay in the know on local SEO</p>
+                                    </div>
+                                    <div class="hover:bg-[#ececec] rounded-[1vh] p-[0.3vw] mt-[1vw]">
+                                        <p class="font-['Archivo',_sans-serif]font-[600] text-[1vw]">Local SEO email
+                                            course</p>
+                                        <p class="text-gray-400 font-[400]">Become a local SEO pro, for free!</p>
+                                    </div>
+                                    <div class="hover:bg-[#ececec] rounded-[1vh] p-[0.3vw] mt-[1vw]">
+                                        <p class="font-['Archivo',_sans-serif]font-[600] text-[1vw] ">Local SEO videos
+                                        </p>
+                                        <p class="text-gray-400 font-[400]">Our YouTube channel — check it out!</p>
+                                    </div>
+                                </section>
+
+                                <section class="p-[2vw]">
+                                    <p
+                                        class="font-['Archivo',_sans-serif]font-[600] text-[1vw] mt-[1vw] hover:bg-[#ececec] rounded-[1vh] p-[0.3vw]">
+                                        Local Search Ranking Factors
+                                    </p>
+                                    <p
+                                        class="font-['Archivo',_sans-serif]font-[600] text-[1vw] mt-[1vw] hover:bg-[#ececec] rounded-[1vh] p-[0.3vw]">
+                                        Local Search Ecosystem</p>
+                                    <p
+                                        class="font-['Archivo',_sans-serif]font-[600] text-[1vw] mt-[1vw] hover:bg-[#ececec] rounded-[1vh] p-[0.3vw]">
+                                        Guide to GBP optimization</p>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+
                 </ul>
             </div>
             <div class="flex gap-[2vw] text-white">
@@ -1070,11 +1235,14 @@
         <div class="">
             <section class="flex  justify-center ml-[10vw]">
                 <div class="">
-                    <p class="text-[3.2vw] mt-[8vw] font-['Archivo',_sans-serif] bg-gradient-to-r from-[#FD015E] via-[#B92CD0] to-[#4C87FF] inline-block text-transparent bg-clip-text">Grow your business</p>
+                    <p
+                        class="text-[3.2vw] mt-[8vw] font-['Archivo',_sans-serif] bg-gradient-to-r from-[#FD015E] via-[#B92CD0] to-[#4C87FF] inline-block text-transparent bg-clip-text">
+                        Grow your business</p>
                     <p class="text-[3.2vw] text-white mt-[-1.5vw] font-['Archivo',_sans-serif]">with local SEO</p>
                     <p class="text-gray-400 text-[1vw]">Get found on Google and turn searchers into customers</br>
                         with a custom local SEO strategy designed for your business.</p>
-                    <button class="bg-[#0860fd] p-[0.7vw_4vw] text-[1vw] rounded-[1vh] text-white mt-[1vw]">Book a Call</button>
+                    <button class="bg-[#0860fd] p-[0.7vw_4vw] text-[1vw] rounded-[1vh] text-white mt-[1vw]">Book a
+                        Call</button>
                 </div>
                 <div class="">
                     <img src="img/alicia-banner.png" alt="" width="70%" height="70%" class="mt-[-2.9vw]">
@@ -1083,40 +1251,57 @@
         </div>
     </section>
 
-<!-- ---------------------footer---------------------------------------- -->
+    <!-- ---------------------footer---------------------------------------- -->
 
     <section id="footer" class="bg-black p-[5vw_22vw_1vw_22vw]">
         <div class="flex gap-[2vw] border-b-2 pb-[3vw]">
             <section class="">
                 <img src="img/Frame-53301-1.svg" alt="" height="40px" width="40px">
-                <p class="text-gray-400 text-[1vw] leading-[1.3vw] mt-[0.4vw]">Whitespark builds tools and provides services that help </br> businesses and agencies with local search marketing. We live </br> and breathe local search and we’re known far and wide for </br> writing and speaking on it.</p>
+                <p class="text-gray-400 text-[1vw] leading-[1.3vw] mt-[0.4vw]">Whitespark builds tools and provides
+                    services that help </br> businesses and agencies with local search marketing. We live </br> and
+                    breathe local search and we’re known far and wide for </br> writing and speaking on it.</p>
                 <div class="flex gap-[0.5vw] mt-[0.4vw]">
-                    <p class=""> <i class="fa-brands fa-x-twitter text-white text-[1vw] bg-[#141414] p-[0.5vw_0.6vw] rounded-[1vh] text-white"></i></p>
-                    <p class=""> <i class="fa-brands fa-linkedin-in text-white text-[1vw] bg-[#141414] p-[0.5vw_0.6vw] rounded-[1vh] text-white"></i></p>
-                    <p class=""> <i  class="fa-brands fa-youtube text-white text-[1vw] bg-[#141414] p-[0.5vw] rounded-[1vh] text-white"></i></p>
-                    <p class=""> <i  class="fa-brands fa-instagram text-white text-[1vw] bg-[#141414] p-[0.5vw_0.6vw] rounded-[1vh] text-white"></i></p>
-                    <p class=""> <i class="fa-brands fa-facebook-f text-white text-[1vw] bg-[#141414] p-[0.5vw_0.75vw] rounded-[1vh] text-white"></i></p>
-                    <p class=""> <i class="fa-brands fa-tiktok text-white text-[1vw] bg-[#141414] p-[0.5vw_0.6vw] rounded-[1vh] text-white"></i></p>
-                    
+                    <p class=""> <i
+                            class="fa-brands fa-x-twitter text-white text-[1vw] bg-[#141414] p-[0.5vw_0.6vw] rounded-[1vh] text-white"></i>
+                    </p>
+                    <p class=""> <i
+                            class="fa-brands fa-linkedin-in text-white text-[1vw] bg-[#141414] p-[0.5vw_0.6vw] rounded-[1vh] text-white"></i>
+                    </p>
+                    <p class=""> <i
+                            class="fa-brands fa-youtube text-white text-[1vw] bg-[#141414] p-[0.5vw] rounded-[1vh] text-white"></i>
+                    </p>
+                    <p class=""> <i
+                            class="fa-brands fa-instagram text-white text-[1vw] bg-[#141414] p-[0.5vw_0.6vw] rounded-[1vh] text-white"></i>
+                    </p>
+                    <p class=""> <i
+                            class="fa-brands fa-facebook-f text-white text-[1vw] bg-[#141414] p-[0.5vw_0.75vw] rounded-[1vh] text-white"></i>
+                    </p>
+                    <p class=""> <i
+                            class="fa-brands fa-tiktok text-white text-[1vw] bg-[#141414] p-[0.5vw_0.6vw] rounded-[1vh] text-white"></i>
+                    </p>
+
                 </div>
             </section>
             <section class="">
                 <div class="bg-[#171717]  rounded-[1vh] w-[25vw]">
-                    <p class=" font-['Archivo',_sans-serif] font-[600] text-[1.2vw] text-white pt-[1.8vw] pl-[1.3vw]">Never miss a beat</p>
-                    <p class="text-gray-400 text-[1vw] pl-[1.3vw] mt-[1vw]">Join our list and get our best local SEO research </br> and advice in your inbox.</p>
-                        <div class="flex justify-between">
-                            <button class="bg-[#0860fd] p-[0_2vw] text-[1vw] rounded-[1vh] text-white mt-[1vw] ml-[1.8vw] mb-[1.4vw]">Subscribe</button>
-                            <img src="img/Group-30-1.svg" alt="">
-                        </div>    
+                    <p class=" font-['Archivo',_sans-serif] font-[600] text-[1.2vw] text-white pt-[1.8vw] pl-[1.3vw]">
+                        Never miss a beat</p>
+                    <p class="text-gray-400 text-[1vw] pl-[1.3vw] mt-[1vw]">Join our list and get our best local SEO
+                        research </br> and advice in your inbox.</p>
+                    <div class="flex justify-between">
+                        <button
+                            class="bg-[#0860fd] p-[0_2vw] text-[1vw] rounded-[1vh] text-white mt-[1vw] ml-[1.8vw] mb-[1.4vw]">Subscribe</button>
+                        <img src="img/Group-30-1.svg" alt="">
+                    </div>
                 </div>
             </section>
         </div>
 
         <div class="pt-[2vw]">
             <div class="grid grid-cols-4 grid-rows-1 gap-4">
-                <div >
+                <div>
                     <p class="text-gray-400 text-[1.2vw]">Local SEO software</p>
-                    
+
                     <p class="text-white text-[1vw] font-[400] hover:text-gray-400 mt-[1vw]">Local Platform</p>
                     <p class="text-white text-[1vw] font-[400] hover:text-gray-400">↳ GBP Website Builder</p>
                     <p class="text-white text-[1vw] font-[400] hover:text-gray-400">Local Rank Tracker</p>
@@ -1138,7 +1323,7 @@
                     <p class="text-white text-[1vw] font-[400] hover:text-gray-400">Referral Program</p>
                 </div>
 
-                <div >
+                <div>
                     <p class="text-gray-400 text-[1.2vw]">Free tools & resources</p>
 
                     <p class="text-white text-[1vw] font-[400] hover:text-gray-400 mt-[1vw]">Review Checker</p>
@@ -1149,7 +1334,7 @@
                     <p class="text-white text-[1vw] font-[400] hover:text-gray-400">Hidden address citation sites</p>
                 </div>
 
-                <div >
+                <div>
                     <p class="text-gray-400 text-[1.2vw]">Company</p>
 
                     <p class="text-white text-[1vw] font-[400] hover:text-gray-400 mt-[1vw]">About us</p>
@@ -1162,11 +1347,12 @@
                 </div>
 
             </div>
-                
+
         </div>
 
         <div class="">
-            <p class=" font-['Roboto Mono', monospace] font-[400] text-gray-400 text-[0.8vw] mt-[3vw] text-center">© 2024 Whitespark Inc. | Terms | Privacy polic | Harsh Chovatiya </p>
+            <p class=" font-['Roboto Mono', monospace] font-[400] text-gray-400 text-[0.8vw] mt-[3vw] text-center">©
+                2024 Whitespark Inc. | Terms | Privacy polic | Harsh Chovatiya </p>
         </div>
     </section>
 
