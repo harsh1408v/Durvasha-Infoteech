@@ -11,7 +11,7 @@
             font-family: "Roboto", sans-serif;
             font-weight: 700;
         }
-
+        
         main {
             background: rgb(5, 29, 126);
             background: radial-gradient(circle, rgba(5, 29, 126, 1) 6%, rgba(6, 5, 50, 1) 99%);
