@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="w-full scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -156,8 +157,6 @@
         .dropdown:hover .dropdown-content {
             display: block;
         }
-
-        
     </style>
     <script>
         tailwind.config = {
@@ -175,83 +174,248 @@
         }
     </script>
 </head>
-<body class="w-full scroll-smooth"> 
-    <button onclick="topFunction()" id="myBtn" title="Go to top" class="fixed z-[99] text-lg  text-[white] cursor-pointer rounded-[50%]  border-[none] right-[30px] bottom-5 bg-[#0860fd] hover:bg-[#0807fd]"><i class="fa-solid fa-inbox text-[1.5vw] p-[1vw]"></i></button>
 
-    <div class=" rounded-[1vh] p-[1vw]  justify-between cursor-pointer md:hidden lg:hidden block">
+<body class="w-full scroll-smooth">
+    <div class=" rounded-[1vh] p-[1vw]  justify-between cursor-pointer sm:hidden lg:hidden block">
 
         <nav class="accordion">
             <div class="flex justify-between p-[5vw]">
-                <p class=""><img src="img/l.png" alt="" height="130px" width="130px"></p>
+                <p class=""><img src="img/l.png" alt="" height="230px" width="230px"></p>
 
-                <p class="accordion"><i class="fas fa-chevron-down text-white  text-[10vw]"></i></p>
+                <p class="accordion"><i class="fas fa-chevron-down text-white  text-[6vw]"></i></p>
             </div>
         </nav>
-            <!-- <p class="accordion"><i class="fas fa-chevron-down"></i></p> -->
+        <!-- <p class="accordion"><i class="fas fa-chevron-down"></i></p> -->
         <div
-            class="panel bg-[white] hidden overflow-hidden bg-[white] max-h-0 overflow-hidden transition-[max-height] duration-[0.2s] ease-[ease-out] h-full">
+            class="panel bg-[white] hidden overflow-hidden bg-[white] h-[auto] overflow-hidden transition-[height] duration-[0.5s] ease-[ease-out] ">
 
-                <section class="  flex justify-between p-[3vw_2vw]">
-                    <p class="text-[5vw]">Local SEO software</p>
-                    <p class=""><i class="fas fa-chevron-down   text-[5vw] text-black"></i></p>
+            <section class=" accordion flex justify-between p-[3vw_2vw]">
+                <p class="text-[5vw]">Local SEO software</p>
+                <p class=""><i class="fas fa-chevron-down   text-[5vw] text-black"></i></p>
+            </section>
+
+            <div
+                class="panel bg-[white] hidden overflow-hidden bg-[white] h-[auto] overflow-hidden transition-[height] duration-[0.5s] ease-[ease-out] ">
+
+                <section class="p-[2vw] border-b-[2px]">
+                    <div class=" hover:bg-[#ececec] rounded-[1vh] p-[1vw]">
+                        <p><img src="img/GBP-Management.svg" alt="" height="80px" width="80px"></p>
+                        <div class="">
+                            <p class="font-['Archivo',_sans-serif]font-[600] text-[6vw]">Local Platform</p>
+                            <p class="text-gray-400 font-[400] text-[3vw]">Take complete control of your Google
+                                Business Profile</p>
+                        </div>
+                    </div>
+
+                    <div class=" mt-[2vw] hover:bg-[#ececec] rounded-[1vh] p-[1vw]">
+                        <p><img src="img/Local-Citation-Finder.svg" alt="" height="80px" width="80px"></p>
+                        <div class="">
+                            <p class="font-['Archivo',_sans-serif]font-[600] text-[6vw]">Local Rank Tracker
+                            </p>
+                            <p class="text-[3vw] text-gray-400 font-[400]">Monitor your local and organic search
+                                performance</p>
+                        </div>
+                    </div>
+
+                    <div class=" mt-[2vw] hover:bg-[#ececec] rounded-[1vh] p-[1vw]">
+                        <p><img src="img/Local-Rank-Tracker_01.svg" alt="" height="80px" width="80px"></p>
+                        <div class="">
+                            <p class="font-['Archivo',_sans-serif]font-[600] text-[6vw]">Local Citation
+                                Finder</p>
+                            <p class="text-[3vw] text-gray-400 font-[400]">Find new citation opportunities to grow your
+                                rankings</p>
+                        </div>
+                    </div>
+
+                    <div class=" mt-[2vw] hover:bg-[#ececec] rounded-[1vh] p-[1vw]">
+                        <p><img src="img/Reputation-Builder_02.svg" alt="" height="80px" width="80px"></p>
+                        <div class="">
+                            <p class="font-['Archivo',_sans-serif] font-[600] text-[6vw]">Reputation Builder
+                            </p>
+                            <p class="text-[3vw] text-gray-400 font-[400]">Get more online reviews and build your
+                                reputation</p>
+                        </div>
+                    </div>
                 </section>
-        
-                <section class="  flex justify-between p-[3vw_2vw]">
-                    <p class="text-[5vw]">Listings & SEO Services</p>
-                    <p class=""><i class="fas fa-chevron-down   text-[5vw] text-black"></i></p>
+                <section class="p-[2vw]">
+                    <p class="text-gray-400 font-[600] text-[7vw] hover:bg-[#ececec] rounded-[1vh] p-[1vw]">
+                        FREE TOOLS</p>
+                    <div class="hover:bg-[#ececec] rounded-[1vh] p-[1vw]">
+                        <p class="font-['Archivo',_sans-serif]font-[600] text-[6vw] mt-[1vw] ">Review
+                            Checker</p>
+                        <p class="text-[3vw] text-gray-400 font-[400]">Your business’s online reviews and ratings at a
+                            glance</p>
+                    </div>
+                    <div class="hover:bg-[#ececec] rounded-[1vh] p-[1vw]">
+                        <p class="font-['Archivo',_sans-serif]font-[600] text-[6vw] mt-[2vw]">Google Review
+                            Link Generator</p>
+                        <p class="text-gray-400 font-[400]">Get more Google reviews with a spiffy custom
+                            review link</p>
+                    </div>
                 </section>
-                
-                <section class="  flex justify-between p-[3vw_2vw]">
-                    <p class="text-[5vw]">Resources</p>
-                    <p class=""><i class="fas fa-chevron-down   text-[5vw] text-black"></i></p>
+                <!-- </div> -->
+            </div>
+
+
+            <section class="accordion flex justify-between p-[3vw_2vw]">
+                <p class="text-[5vw] text-[#fd015e]">Listings & SEO Services</p>
+                <p class=""><i class="fas fa-chevron-down   text-[5vw] text-black"></i></p>
+            </section>
+            <div
+                class="panel bg-[white] hidden overflow-hidden bg-[white] h-[auto] overflow-hidden transition-[height] duration-[0.5s] ease-[ease-out] ">
+                <section class="p-[2vw]">
+                    <a href="index.html">
+                        <div class=" hover:bg-[#ececec] rounded-[1vh] p-[1vw]">
+                            <p><img src="img/SEO-Services_Flat_01.svg" alt="" height="80px" width="80px">
+                            </p>
+                            <div class="">
+                                <p class="font-['Archivo',_sans-serif]font-[600] text-[6vw]">SEO Services
+                                </p>
+                                <p class="text-[3vw] text-gray-400 font-[400]">Increase your rankings and conversions
+                                    with
+                                    help from  our team of local SEO experts</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class=" mt-[2vw] hover:bg-[#ececec] rounded-[1vh] p-[1vw]">
+                        <p><img src="img/Listings-Service_01.svg" alt="" height="80px" width="80px"></p>
+                        <div class="">
+                            <p class="font-['Archivo',_sans-serif]font-[600] text-[6vw]">Listings Service
+                            </p>
+                            <p class="text-[3vw] text-gray-400 font-[400]">Take the pain out of managing your
+                                business’s listings  and let us find, fix, improve, and build new
+                                listings to  maximize their impact on your rankings.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class=" mt-[2vw] hover:bg-[#ececec] rounded-[1vh] p-[1vw]">
+                        <p><img src="img/Yext-Replacement-Service_01.svg" alt="" height="80px" width="80px">
+                        </p>
+                        <div class="">
+                            <p class="font-['Archivo',_sans-serif]font-[600] text-[6vw]">Yext Replacement
+                                Service</p>
+                            <p class="text-[3vw] text-gray-400 font-[400]">Ditch Yext with our superior and more
+                                affordable  alternative</p>
+                        </div>
+                    </div>
+
+                    <div class=" mt-[2vw] hover:bg-[#ececec] rounded-[1vh] p-[1vw]">
+                        <p><img src="img/Enterprise-Services_flat.svg" alt="" height="80px" width="80px">
+                        </p>
+                        <div class="">
+                            <p class="font-['Archivo',_sans-serif]font-[600] text-[6vw]">Enterprise Services
+                            </p>
+                            <p class="text-[3vw] text-gray-400 font-[400]">Leverage our extensive experience working
+                                with multi- location and enterprise businesses to solve your local
+                                search problems</p>
+                        </div>
+                    </div>
                 </section>
-                
-                <section class=" flex justify-between p-[3vw_2vw]">
-                    <p class="text-[5vw]">sign in</p>
+            </div>
+
+
+
+            <section class=" accordion flex justify-between p-[3vw_2vw]">
+                <p class="text-[5vw]">Resources</p>
+                <p class=""><i class="fas fa-chevron-down   text-[5vw] text-black"></i></p>
+            </section>
+
+            <div
+            class="panel bg-[white] hidden overflow-hidden bg-[white] h-[auto] overflow-hidden transition-[height] duration-[0.5s] ease-[ease-out] ">
+            <div class="">
+                <section class="p-[2vw]">
+                    <a href="help_center.html">
+                        <div class="hover:bg-[#ececec] rounded-[1vh] p-[1vw] mt-[2vw]">
+                            <p class="font-['Archivo',_sans-serif]font-[600] text-[6vw] ">Help center
+                            </p>
+                            <p class="text-[3vw] text-gray-400 font-[400]">We're here to help!</p>
+                        </div>
+                    </a>
+                    <div class="hover:bg-[#ececec] rounded-[1vh] p-[1vw] mt-[2vw]">
+                        <p class="font-['Archivo',_sans-serif]font-[600] text-[6vw] ">Local Insider
+                            newsletter
+                        </p>
+                        <p class="text-[3vw] text-gray-400 font-[400]">Stay in the know on local SEO</p>
+                    </div>
+
+                    <div class="hover:bg-[#ececec] rounded-[1vh] p-[1vw] mt-[2vw]">
+                        <p class="font-['Archivo',_sans-serif]font-[600] text-[6vw]">Local SEO email
+                            course</p>
+                        <p class="text-[3vw] text-gray-400 font-[400]">Become a local SEO pro, for free!</p>
+                    </div>
+                    <div class="hover:bg-[#ececec] rounded-[1vh] p-[1vw] mt-[2vw]">
+                        <p class="font-['Archivo',_sans-serif]font-[600] text-[6vw] ">Local SEO videos
+                        </p>
+                        <p class="text-[3vw] text-gray-400 font-[400]">Our YouTube channel — check it out!</p>
+                    </div>
                 </section>
 
-                <section class="text-center pb-[3vw]">
-                    <button class="p-[3vw_15vw] text-[5vw] rounded-[1vh] text-white mt-[3vw] cursor-pointer bg-[#0860fd] hover:bg-[#0807fd]]">Book a call</button>
+                <section class="p-[2vw]">
+                    <p
+                        class="font-['Archivo',_sans-serif]font-[600] text-[6vw] mt-[2vw] hover:bg-[#ececec] rounded-[1vh] p-[1vw]">
+                        Local Search Ranking Factors
+                    </p>
+                    <p
+                        class="font-['Archivo',_sans-serif]font-[600] text-[6vw] mt-[2vw] hover:bg-[#ececec] rounded-[1vh] p-[1vw]">
+                        Local Search Ecosystem</p>
+                    <p
+                        class="font-['Archivo',_sans-serif]font-[600] text-[6vw] mt-[2vw] hover:bg-[#ececec] rounded-[1vh] p-[1vw]">
+                        Guide to GBP optimization</p>
                 </section>
+            </div>
+        </div>
+
+
+            <section class=" flex justify-between p-[3vw_2vw]">
+                <p class="text-[5vw]">sign in</p>
+            </section>
+
+            <section class="text-center pb-[3vw]">
+                <button
+                    class="p-[3vw_15vw] text-[5vw] rounded-[1vh] text-white mt-[3vw] cursor-pointer bg-[#0860fd] hover:bg-[#0807fd]]">Book
+                    a call</button>
+            </section>
         </div>
     </div>
 
     <script>
-         var acc = document.getElementsByClassName("accordion");
-        var i;
-        
-        for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
-            /* Toggle between adding and removing the "active" class,
-            to highlight the button that controls the panel */
-            this.classList.toggle("active");
-        
-            /* Toggle between hiding and showing the active panel */
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-              panel.style.display = "none";
-            } else {
-              panel.style.display = "block";
-            }
-          });
-        }
-        
         var acc = document.getElementsByClassName("accordion");
         var i;
-        
+
         for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-              panel.style.maxHeight = null;
-            } else {
-              panel.style.maxHeight = panel.scrollHeight + "px";
-            }
-          });
+            acc[i].addEventListener("click", function () {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
         }
 
-         
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.Height) {
+                    panel.style.Height = null;
+                } else {
+                    panel.style.Height = panel.scrollHeight + "px";
+                }
+            });
+        }
+
+
     </script>
 </body>
+
 </html>

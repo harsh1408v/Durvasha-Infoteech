@@ -96,10 +96,45 @@ let slideIndex = 1;
           acc[i].addEventListener("click", function() {
             this.classList.toggle("active");
             var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-              panel.style.maxHeight = null;
+            if (panel.style.Height) {
+              panel.style.Height = null;
             } else {
-              panel.style.maxHeight = panel.scrollHeight + "px";
+              panel.style.Height = panel.scrollHeight + "px";
+            }
+          });
+        }
+
+
+        var ac = document.getElementsByClassName("accordion1");
+        var j;
+        
+        for (j = 0; j < ac.length; j++) {
+          ac[j].addEventListener("click", function() {
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            this.classList.toggle("active");
+        
+            /* Toggle between hiding and showing the active panel */
+            var pane = this.nextElementSibling;
+            if (pane.style.display === "block") {
+              pane.style.display = "none";
+            } else {
+              pane.style.display = "block";
+            }
+          });
+        }
+
+        var ac = document.getElementsByClassName("accordion1");
+        var j;
+        
+        for (j = 0; j < ac.length; j++) {
+          ac[j].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var pane = this.nextElementSibling;
+            if (pane.style.maxHeight) {
+              pane.style.maHeight = null;
+            } else {
+              pane.style.maxHeight = pane.scrollHeight + "px";
             }
           });
         }
