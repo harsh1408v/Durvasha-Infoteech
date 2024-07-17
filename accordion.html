@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" class="w-full scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/c4c8ff35ac.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Durvasha Infoteech</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+        }
+
+        body {
+            background: rgb(5, 29, 126);
+            background: radial-gradient(circle, rgba(5, 29, 126, 1) 6%, rgba(6, 5, 50, 1) 99%);
+        }
+
+        #second {
+            background: rgb(5, 29, 126);
+            background: radial-gradient(circle, rgba(5, 29, 126, 1) 6%, rgba(6, 5, 50, 1) 41%);
+        }
+
+        #third {
+            background: rgb(5, 29, 126);
+            background: radial-gradient(circle, rgba(5, 29, 126, 1) 6%, rgba(6, 5, 50, 1) 41%);
+        }
+
+        #eleven {
+            background: rgb(5, 29, 126);
+            background: radial-gradient(circle, rgba(5, 29, 126, 1) 6%, rgba(6, 5, 50, 1) 41%);
+        }
+
+        .mySlides {
+            display: none
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            /* max-width: 1000px; */
+            position: relative;
+            margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 2vw;
+            width: 2vw;
+            margin: 0 2px;
+            background-color: #dbe7ff;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #4c89ff;
+        }
+
+        /* Fading animation
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        } 
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        } */
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+
+            .prev,
+            .next,
+            .text {
+                font-size: 11px
+            }
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    'sm': { 'min': '320px', 'max': '480px' },
+                    // => @media (min-width: 640px and max-width: 767px) { ... }
+
+                    'md': { 'min': '481px', 'max': '1024px' },
+                    // => @media (min-width: 768px and max-width: 1023px) { ... }
+
+                    'lg': { 'min': '1025px' },
+                },
+            }
+        }
+    </script>
+</head>
+<body class="w-full scroll-smooth"> 
+    <button onclick="topFunction()" id="myBtn" title="Go to top" class="fixed z-[99] text-lg  text-[white] cursor-pointer rounded-[50%]  border-[none] right-[30px] bottom-5 bg-[#0860fd] hover:bg-[#0807fd]"><i class="fa-solid fa-inbox text-[1.5vw] p-[1vw]"></i></button>
+
+    <div class=" rounded-[1vh] p-[1vw]  justify-between cursor-pointer md:hidden lg:hidden block">
+
+        <nav class="accordion">
+            <div class="flex justify-between p-[5vw]">
+                <p class=""><img src="img/l.png" alt="" height="130px" width="130px"></p>
+
+                <p class="accordion"><i class="fas fa-chevron-down text-white  text-[10vw]"></i></p>
+            </div>
+        </nav>
+            <!-- <p class="accordion"><i class="fas fa-chevron-down"></i></p> -->
+        <div
+            class="panel bg-[white] hidden overflow-hidden bg-[white] max-h-0 overflow-hidden transition-[max-height] duration-[0.2s] ease-[ease-out] h-full">
+
+                <section class="  flex justify-between p-[3vw_2vw]">
+                    <p class="text-[5vw]">Local SEO software</p>
+                    <p class=""><i class="fas fa-chevron-down   text-[5vw] text-black"></i></p>
+                </section>
+        
+                <section class="  flex justify-between p-[3vw_2vw]">
+                    <p class="text-[5vw]">Listings & SEO Services</p>
+                    <p class=""><i class="fas fa-chevron-down   text-[5vw] text-black"></i></p>
+                </section>
+                
+                <section class="  flex justify-between p-[3vw_2vw]">
+                    <p class="text-[5vw]">Resources</p>
+                    <p class=""><i class="fas fa-chevron-down   text-[5vw] text-black"></i></p>
+                </section>
+                
+                <section class=" flex justify-between p-[3vw_2vw]">
+                    <p class="text-[5vw]">sign in</p>
+                </section>
+
+                <section class="text-center pb-[3vw]">
+                    <button class="p-[3vw_15vw] text-[5vw] rounded-[1vh] text-white mt-[3vw] cursor-pointer bg-[#0860fd] hover:bg-[#0807fd]]">Book a call</button>
+                </section>
+        </div>
+    </div>
+
+    <script>
+         var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            this.classList.toggle("active");
+        
+            /* Toggle between hiding and showing the active panel */
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+          });
+        }
+
+         
+    </script>
+</body>
+</html>

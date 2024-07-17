@@ -285,9 +285,42 @@
 
     <main class="md:hidden lg:hidden block">
         <nav class="">
-            <div class="flex justify-between p-[5vw]">
-                <p class=""><img src="img/l.png" alt="" height="130px" width="130px"></p>
-                <p class=""><i class="fas fa-chevron-down text-white  text-[10vw]"></i></p>
+            <div class=" rounded-[1vh] p-[1vw]  justify-between cursor-pointer">
+
+                <nav class="accordion">
+                    <div class="flex justify-between p-[5vw]">
+                        <p class=""><img src="img/l.png" alt="" height="130px" width="130px"></p>
+        
+                        <p class="accordion"><i class="fas fa-chevron-down text-white  text-[10vw]"></i></p>
+                    </div>
+                </nav>
+                    <!-- <p class="accordion"><i class="fas fa-chevron-down"></i></p> -->
+                <div
+                    class="panel bg-[white] hidden overflow-hidden bg-[white] max-h-0 overflow-hidden transition-[max-height] duration-[0.2s] ease-[ease-out] h-full">
+        
+                        <section class="  flex justify-between p-[3vw_2vw]">
+                            <p class="text-[5vw]">Local SEO software</p>
+                            <p class=""><i class="fas fa-chevron-down   text-[5vw] text-black"></i></p>
+                        </section>
+                
+                        <section class="  flex justify-between p-[3vw_2vw]">
+                            <p class="text-[5vw]">Listings & SEO Services</p>
+                            <p class=""><i class="fas fa-chevron-down   text-[5vw] text-black"></i></p>
+                        </section>
+                        
+                        <section class="  flex justify-between p-[3vw_2vw]">
+                            <p class="text-[5vw]">Resources</p>
+                            <p class=""><i class="fas fa-chevron-down   text-[5vw] text-black"></i></p>
+                        </section>
+                        
+                        <section class=" flex justify-between p-[3vw_2vw]">
+                            <p class="text-[5vw]">sign in</p>
+                        </section>
+        
+                        <section class="text-center pb-[3vw]">
+                            <button class="p-[3vw_15vw] text-[5vw] rounded-[1vh] text-white mt-[3vw] cursor-pointer bg-[#0860fd] hover:bg-[#0807fd]]">Book a call</button>
+                        </section>
+                </div>
             </div>
         </nav>
 
