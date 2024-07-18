@@ -31,9 +31,24 @@
             background: radial-gradient(circle, rgba(5, 29, 126, 1) 6%, rgba(6, 5, 50, 1) 99%);
         }
     </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    'sm': { 'min': '320px', 'max': '480px' },
+                    // => @media (min-width: 640px and max-width: 767px) { ... }
+
+                    'md': { 'min': '481px', 'max': '1024px' },
+                    // => @media (min-width: 768px and max-width: 1023px) { ... }
+
+                    'lg': { 'min': '1025px' },
+                },
+            }
+        }
+    </script>
 </head>
 <body class="h-full w-full scroll-smooth ">
-    <main class="relative h-full place-content-center text-center">
+    <main class="relative h-full place-content-center text-center sm:hidden md:hidden">
         <p class="p-[0_47.5vw]"> <img src="img/Frame-53301-1.svg" alt="" height="80px" width="80px" class=""></p>
         <p class="text-[1vw] font-[600] text-gray-400 mt-[1vw]">NEVER MISS A BEAT</p>
         <p class="mt-[-0.7vw] font-[600] text-[3vw] text-white font-['Archivo',_sans-serif]">Whitespark Local Insider</p>
@@ -42,6 +57,18 @@
         <div class="flex mt-[1vw] p-[0_38vw]">
             <input type="email" name="" id="" class="h-[2.5vw] w-[20vw] border-[2px] border-#fd015e] rounded-[1vh_0_0_1vh] pl-[1vw]" placeholder="Enter your Email">
             <button class="bg-[#fd015e] pr-[0.5vw] pl-[0.5vw] rounded-[0_1vh_1vh_0]">Subscribe</button>
+        </div>
+    </main>
+<!-- -----------mobile-------------------- -->
+    <main class="relative h-full place-content-center text-center lg:hidden block pt-[40%]">
+        <p class="p-[0_40vw]"> <img src="img/Frame-53301-1.svg" alt="" height="200px" width="200px" class=""></p>
+        <p class="text-[4vw] font-[600] text-gray-400 mt-[1vw]">NEVER MISS A BEAT</p>
+        <p class=" font-[600] text-[8vw] text-white font-['Archivo',_sans-serif]">Whitespark Local Insider</p>
+        <p class="text-[4vw] font=[400] text-gray-400 mt-[-0.7vw]">Join our list and get our best local SEO research and advice in your inbox.</p>
+
+        <div class="flex mt-[1vw] p-[0_20vw]">
+            <input type="email" name="" id="" class="h-[6vw] w-[40vw] border-[2px] border-#fd015e] rounded-[1vh_0_0_1vh] pl-[1vw]" placeholder="Enter your Email">
+            <button class="bg-[#fd015e] pr-[1vw] pl-[1vw] rounded-[0_1vh_1vh_0]">Subscribe</button>
         </div>
     </main>
 </body>

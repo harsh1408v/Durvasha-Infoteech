@@ -69,10 +69,24 @@
 
 </style>
 
+<script>
+    tailwind.config = {
+    theme: {
+        screens: {
+            'sm': { 'min': '320px', 'max': '480px' },
+            // => @media (min-width: 640px and max-width: 767px) { ... }
 
+            'md': { 'min': '481px', 'max': '1024px' },
+            // => @media (min-width: 768px and max-width: 1023px) { ... }
+
+            'lg': { 'min': '1025px' },
+        },
+    }
+}
+</script>
 
 <body class="grid h-full w-full place-items-center bg-[#fdf3f0]">
-    <div class="wrapper overflow-hidden w-[25vw] p-[30px] rounded-[15px] bg-[#fff]">
+    <div class="wrapper overflow-hidden  p-[30px] rounded-[15px] bg-[#fff] ">
         <div class="" style="display: flex; justify-content: center; margin-bottom: 1vw;">
             <img src="img/Frame-53301-1.svg" alt="" height="50px" width="50px">
         </div>
@@ -128,6 +142,8 @@
             </div>
         </div>
     </div>
+
+    
 
 
     <script>
