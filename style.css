@@ -1,119 +1,119 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-        @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
 
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Roboto", sans-serif;
-            font-weight: 700;
-        }
-        
-        main {
-            background: rgb(5, 29, 126);
-            background: radial-gradient(circle, rgba(5, 29, 126, 1) 6%, rgba(6, 5, 50, 1) 99%);
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
 
-        #second {
-            background: rgb(5, 29, 126);
-            background: radial-gradient(circle, rgba(5, 29, 126, 1) 6%, rgba(6, 5, 50, 1) 41%);
-        }
+main {
+    background: rgb(5, 29, 126);
+    background: radial-gradient(circle, rgba(5, 29, 126, 1) 6%, rgba(6, 5, 50, 1) 99%);
+}
 
-        #third {
-            background: rgb(5, 29, 126);
-            background: radial-gradient(circle, rgba(5, 29, 126, 1) 6%, rgba(6, 5, 50, 1) 41%);
-        }
+#second {
+    background: rgb(5, 29, 126);
+    background: radial-gradient(circle, rgba(5, 29, 126, 1) 6%, rgba(6, 5, 50, 1) 41%);
+}
 
-        #eleven {
-            background: rgb(5, 29, 126);
-            background: radial-gradient(circle, rgba(5, 29, 126, 1) 6%, rgba(6, 5, 50, 1) 41%);
-        }
+#third {
+    background: rgb(5, 29, 126);
+    background: radial-gradient(circle, rgba(5, 29, 126, 1) 6%, rgba(6, 5, 50, 1) 41%);
+}
 
-        .mySlides {
-            display: none
-        }
+#eleven {
+    background: rgb(5, 29, 126);
+    background: radial-gradient(circle, rgba(5, 29, 126, 1) 6%, rgba(6, 5, 50, 1) 41%);
+}
 
-        img {
-            vertical-align: middle;
-        }
+.mySlides {
+    display: none
+}
 
-        /* Slideshow container */
-        .slideshow-container {
-            /* max-width: 1000px; */
-            position: relative;
-            margin: auto;
-        }
+img {
+    vertical-align: middle;
+}
 
-        /* Next & previous buttons */
-        .prev,
-        .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            padding: 16px;
-            margin-top: -22px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-        }
+/* Slideshow container */
+.slideshow-container {
+    /* max-width: 1000px; */
+    position: relative;
+    margin: auto;
+}
 
-        /* Position the "next button" to the right */
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
 
-        /* On hover, add a black background color with a little bit see-through */
-        .prev:hover,
-        .next:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-        }
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
 
-        /* Caption text */
-        .text {
-            color: #f2f2f2;
-            font-size: 15px;
-            padding: 8px 12px;
-            position: absolute;
-            bottom: 8px;
-            width: 100%;
-            text-align: center;
-        }
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
 
-        /* Number text (1/3 etc) */
-        .numbertext {
-            color: #f2f2f2;
-            font-size: 12px;
-            padding: 8px 12px;
-            position: absolute;
-            top: 0;
-        }
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
 
-        /* The dots/bullets/indicators */
-        .dot {
-            cursor: pointer;
-            height: 2vw;
-            width: 2vw;
-            margin: 0 2px;
-            background-color: #dbe7ff;
-            border-radius: 50%;
-            display: inline-block;
-            transition: background-color 0.6s ease;
-        }
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
 
-        .active,
-        .dot:hover {
-            background-color: #4c89ff;
-        }
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 2vw;
+    width: 2vw;
+    margin: 0 2px;
+    background-color: #dbe7ff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
 
-        /* Fading animation
+.active,
+.dot:hover {
+    background-color: #4c89ff;
+}
+
+/* Fading animation
         .fade {
             animation-name: fade;
             animation-duration: 1.5s;
@@ -129,19 +129,65 @@
             }
         } */
 
-        /* On smaller screens, decrease text size */
-        @media only screen and (max-width: 300px) {
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
 
-            .prev,
-            .next,
-            .text {
-                font-size: 11px
-            }
-        }
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
 
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
 
 
+/* sliders */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    font-size: 2.5vmin;
+}
+
+.carousel-slider {
+    display: flex;
+    transition: 0.3s;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+}
+
+.carousel button {
+    margin-top: 5vw;
+}
+
+.carousel-navigation {
+    position: absolute;
+    bottom: 1em;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.carousel-bullet {
+    width: 1vw;
+    height: 1vw;
+    border: none;
+    background-color: #dbe7ff;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.carousel-bullet:hover {
+    background-color: #b7d0ff;
+}
+
+.carousel-bullet.is-active {
+    background-color: #4c89ff;
+}
